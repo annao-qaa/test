@@ -2,7 +2,6 @@ package example;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureId;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ReproTest {
