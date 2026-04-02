@@ -2,16 +2,19 @@ package example;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureId;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ReproTest {
 
     @Test
-    @AllureId("381073")
+    @AllureId("381079")
     void testLoginSuccess() {
         Allure.step("Проверить предусловие выполнения: страница входа открыта");
         Allure.step("Выполнить действие: попытаться войти");
         Allure.step("Ожидаемый результат: логин успешен");
         Allure.step("Ожидаемый результат: отображается имя пользователя");
+
+        Assertions.fail("Intentional failed for repro");
     }
 }
