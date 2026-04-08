@@ -2,11 +2,13 @@ package example;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.AllureId;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class ReproTest {
 
     @Test
+    @Tag("repro")
     @AllureId("381083")
     void launchMergeTestInProgressPassed() {
         Allure.step("Проверить предусловие выполнения: страница входа открыта");
