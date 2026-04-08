@@ -9,7 +9,7 @@ public class ReproTest {
 
     @Test
     @Tag("repro")
-    @AllureId("381083")
+    @AllureId("382103")
     void launchMergeTestInProgressPassed() {
         Allure.step("Проверить предусловие выполнения: страница входа открыта");
         Allure.step("Выполнить действие: попытаться войти");
