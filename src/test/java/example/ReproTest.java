@@ -9,11 +9,14 @@ public class ReproTest {
 
     @Test
     @Tag("repro")
-    @AllureId("382103")
-    void launchMergeTestInProgressPassed() {
-        Allure.step("Проверить предусловие выполнения: страница входа открыта");
-        Allure.step("Выполнить действие: попытаться войти");
-        Allure.step("Ожидаемый результат: логин успешен");
-        Allure.step("Ожидаемый результат: отображается имя пользователя");
+    @AllureId("385326")
+    void launchTestPlanWithEnvironmentParameters() {
+        Allure.step("Открыть тест-план");
+        Allure.step("Нажать кнопку Запустить");
+        Allure.step("В блоке Окружение нажать Добавить");
+        Allure.step("Изменить значение одного параметра окружения");
+        Allure.step("Оставить остальные параметры окружения незаполненными");
+        Allure.step("Нажать кнопку Отправить");
+        Allure.step("Проверить, что запуск стартовал, а незаполненные параметры не заблокировали форму");
     }
 }
