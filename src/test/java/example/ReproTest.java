@@ -9,7 +9,7 @@ public class ReproTest {
 
     @Test
     @Tag("repro")
-    @AllureId("385326")
+    @AllureId("385327")
     void launchTestPlanWithEnvironmentParameters() {
         Allure.step("Открыть тест-план");
         Allure.step("Нажать кнопку Запустить");
